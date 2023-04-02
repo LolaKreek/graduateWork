@@ -1,0 +1,19 @@
+.app__main-grid-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Menu{
+    flex-basis: 10%;
+}
+
+.Main{
+    flex-basis: 92%;
+    padding-left: 60px;
+    padding-top: 20px;
+    background-image: url('../../assets/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
