@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next'
 import './style.css';
 import GradientButton from '../../../layouts/GradientButton';
 import AlternativeSystems from '../../../layouts/AlternativeSystems';
+import { loginScheme } from '../formik/formikScheme';
 
 const LoginForm: React.FC = () => {
     const navigate = useNavigate();
@@ -23,10 +24,10 @@ const LoginForm: React.FC = () => {
           password: '',
         },
         isInitialValid: false,
-        // validationSchema: validationSchema,
+        validationSchema: loginScheme,
         onSubmit: (values) => {
             try {
-                
+                console.log("Submit login", values);
             } catch (error) {
                 console.error(error);
             }
@@ -79,7 +80,7 @@ const LoginForm: React.FC = () => {
                     helperText={formik.touched.password && formik.errors.password}/>
                 {error ? <p className='login__error'>{t("loginError")}</p> : <></>}
                 <p className='login-form__forgot-password-link' onClick={() => navigate('/')}>{t('loginFormForgotPassword')}</p>
-                <GradientButton />
+                <GradientButton option='submit'/>
             </form>
 
             <p className='login-form__alternative-login-systems' >{t('loginFromAltSystems')}</p>

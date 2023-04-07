@@ -1,7 +1,11 @@
 import { Button } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
-const GradientButton = () => {
+type GradientButtonProps = {
+    option: 'submit'
+}
+
+const GradientButton = ({option}:GradientButtonProps) => {
     const {t} = useTranslation();
     const styleButton = {
         "&.MuiButton-root" : {
@@ -18,7 +22,7 @@ const GradientButton = () => {
 
     return(
         <>
-            <Button sx={styleButton}>{t('login')}</Button>
+            <Button sx={styleButton} type={option}>{t('login')}</Button>
         </>
     )
 }
