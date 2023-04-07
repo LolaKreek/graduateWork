@@ -1,0 +1,48 @@
+.login-page__main-wrapper{
+    max-width: 550px;
+    margin: 0 auto;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(86, 31, 90, 0.8);
+}
+
+.login-page__main-form-headers{
+    padding-top: 15px;
+    font-family: "Quicksand";
+}
+
+.login-main-form-headers__header{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.login-main-form-headers__paragraph{
+    margin-top: 0;
+    color: #b3a4a4;
+}
+
+.login-page__form-wrapper{
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form__forgot-password-link{
+    color: #b3a4a4;
+    font-family: 'Quicksand';
+    text-align: right;
+    cursor: pointer;
+}
+
+.login-form__alternative-login-systems{
+    color: #b3a4a4;
+    font-family: 'Quicksand';
+    margin-top: 40px;
+}
+
+.login-form__rejestration-link{
+    font-family: 'Quicksand';
+    padding-bottom: 20px;
+    cursor: pointer;
+}

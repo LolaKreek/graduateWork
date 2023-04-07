@@ -3,5 +3,14 @@
     "menuQuiz":"Quizy",
     "menuInstruction":"Instrukcja",
     "menuProfile":"Profil",
-    "menuLogin":"Zaloguj się"
+    "menuLogin":"Zaloguj się",
+    "pageForlogin":"Strona do logowania",
+    "loginMainHeader":"Podaj dane, żeby zalogować się",
+    "loginUserLoginHeader":"Logowanie użytkownika",
+    "loginFormEmail":"Login lub email",
+    "loginFormPassword":"Hasło",
+    "loginFormForgotPassword":"Zapomniałeś hasła?",
+    "loginFromAltSystems":"Lub zaloguj się za pomocą",
+    "registerLink":"Zarejestruj się",
+    "login":"Zaloguj się"
 }

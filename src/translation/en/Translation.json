@@ -3,6 +3,14 @@
     "menuQuiz":"Quizes",
     "menuInstruction":"Instruction",
     "menuProfile":"Profile",
-    "menuLogin":"Log in"
-
+    "menuLogin":"Log in",
+    "pageForlogin":"Page for log in",
+    "loginMainHeader":"Provide the data to log in",
+    "loginUserLoginHeader":"User logging in",
+    "loginFormEmail":"Login or email",
+    "loginFormPassword":"Password",
+    "loginFormForgotPassword":"Have you forgotten your password?",
+    "loginFromAltSystems":"Or log in with help",
+    "registerLink":"Register",
+    "login":"Log in"
 }

@@ -1,0 +1,17 @@
+.alternative-systems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 230px;
+    margin: 0 auto;
+}
+
+.alternative-systems__item{
+    max-width: 50px;
+}
+
+.alternative-systems__item-link{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
