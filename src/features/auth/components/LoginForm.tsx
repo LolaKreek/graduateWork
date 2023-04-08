@@ -10,20 +10,17 @@ import './style.css';
 import GradientButton from '../../../layouts/GradientButton';
 import AlternativeSystems from '../../../layouts/AlternativeSystems';
 import { loginScheme } from '../formik/formikScheme';
+import { styleInputs, styleLabels } from '../../../components/StylesVariable';
 
 const LoginForm: React.FC = () => {
     const navigate = useNavigate();
-    const dispatch = useDispatch();
-    const location = useLocation();
     const {t} = useTranslation();
-    const [error, serError] = useState(false);
 
     const formik = useFormik({
         initialValues: {
           login: '',
           password: '',
         },
-        isInitialValid: false,
         validationSchema: loginScheme,
         onSubmit: (values) => {
             try {
@@ -33,18 +30,6 @@ const LoginForm: React.FC = () => {
             }
         },
     });
-
-    const styleInputs = {
-        color: 'white',
-        fontWeight: 'normal',
-        borderBottom: '1px solid white',
-    }
-
-    const styleLabels = {
-        color: 'white',
-        fontWeight: 'normal',
-        fontSize: "18px"
-    }
 
     return (
         <div className='login-page__main-wrapper'>
@@ -78,14 +63,13 @@ const LoginForm: React.FC = () => {
                     onChange={formik.handleChange}
                     error={formik.touched.password && Boolean(formik.errors.password)}
                     helperText={formik.touched.password && formik.errors.password}/>
-                {error ? <p className='login__error'>{t("loginError")}</p> : <></>}
-                <p className='login-form__forgot-password-link' onClick={() => navigate('/')}>{t('loginFormForgotPassword')}</p>
-                <GradientButton option='submit'/>
+                <p className='login-form__forgot-password-link' onClick={() => navigate('/forgot-password')}>{t('loginFormForgotPassword')}</p>
+                <GradientButton buttonName='login' option='submit'/>
             </form>
 
             <p className='login-form__alternative-login-systems' >{t('loginFromAltSystems')}</p>
             <AlternativeSystems />
-            <p className='login-form__rejestration-link' onClick={() => {navigate('/')}}>{t('registerLink')}</p>
+            <p className='login-form__rejestration-link' onClick={() => {navigate('/register')}}>{t('registerLink')}</p>
         </div>
     );
 };

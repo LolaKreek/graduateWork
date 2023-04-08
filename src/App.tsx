@@ -14,6 +14,8 @@ import Profile from './pages/profile'
 import Quiz from './pages/quiz'
 import NotFound from './pages/notFound'
 import '../src/translation/i18n'
+import RegisterPage from './pages/auth/registerPage'
+import ForgotPassword from './pages/auth/forgotPassword'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,6 +30,8 @@ function App() {
             <Route path="/" element={<MainWrapper />} >
               <Route path='/' element={<Homepage />} />
               <Route path='/login' element={<Login />} />
+              <Route path='/register' element={<RegisterPage />} />
+              <Route path='/forgot-password' element={<ForgotPassword />} />
               <Route path='/quiz' element={<Quiz />} />
               <Route path='/instruction' element={<Instruction />} />
               <Route path='/profile' element={<Profile />} />
