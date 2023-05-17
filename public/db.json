@@ -1,0 +1,22 @@
+{
+  "users": {
+    "1" : {
+      "userName": "Admin",
+      "password": "123123123",
+      "firstName": "Adam",
+      "lastName": "Kowalski",
+      "phoneNumber": "111 222 333",
+      "email": "admin@admin",
+      "location": "Poland"
+    },
+    "2" : {
+      "userName": "LolaKreek",
+      "password": "123123123",
+      "firstName": "Lalita",
+      "lastName": "Klimchuk",
+      "phoneNumber": "111 222 333",
+      "email": "lola@com",
+      "location": "Poland"
+    }
+  }
+}

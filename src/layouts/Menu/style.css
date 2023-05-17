@@ -10,6 +10,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -30,7 +31,11 @@
     flex-basis: 40%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: rgb(140, 47, 131);
+    border-radius: 10px;
+    max-height: 50px;
+    max-width: 538px;
 }
 
 .menu__menu-list-wrapper > li{
@@ -38,6 +43,6 @@
 }
 
 .menu__menu-list-wrapper > li:hover{
-    background-color: rgb(140, 47, 131);
+    background-color: rgb(104, 35, 97);
     transition: all .5s;
 }

@@ -55,7 +55,7 @@ const ChangeLanguage = () =>{
                       maxHeight:32,
                       minHeight:32,
                       minWidth:32,
-                      marginTop:1.3,
+                      marginTop:1,
                     },
                     "& .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input": {
                       padding:0, 

@@ -1,16 +1,15 @@
 
 import { TextField } from '@mui/material';
 import React, { useState } from 'react';
-import { useDispatch, useSelector, useStore } from 'react-redux';
-import { useLocation, useNavigate } from 'react-router-dom';
-import { ErrorMessage, useFormik } from 'formik';
-import { authLogin } from '../slices';
+import { useNavigate } from 'react-router-dom';
+import { useFormik } from 'formik';
 import { useTranslation } from 'react-i18next'
 import './style.css';
 import GradientButton from '../../../layouts/GradientButton';
 import AlternativeSystems from '../../../layouts/AlternativeSystems';
 import { loginScheme } from '../formik/formikScheme';
 import { styleInputs, styleLabels } from '../../../components/StylesVariable';
+import { LoginUser } from '../../../services/auth';
 
 const LoginForm: React.FC = () => {
     const navigate = useNavigate();
@@ -24,7 +23,7 @@ const LoginForm: React.FC = () => {
         validationSchema: loginScheme,
         onSubmit: (values) => {
             try {
-                console.log("Submit login", values);
+                LoginUser({login: values.login, password: values.password})
             } catch (error) {
                 console.error(error);
             }

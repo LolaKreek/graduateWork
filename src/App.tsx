@@ -29,9 +29,11 @@ function App() {
             {/* <Route path="/" element={<PrivateRoute><Menu /></PrivateRoute>} /> */}
             <Route path="/" element={<MainWrapper />} >
               <Route path='/' element={<Homepage />} />
+
               <Route path='/login' element={<Login />} />
               <Route path='/register' element={<RegisterPage />} />
               <Route path='/forgot-password' element={<ForgotPassword />} />
+              
               <Route path='/quiz' element={<Quiz />} />
               <Route path='/instruction' element={<Instruction />} />
               <Route path='/profile' element={<Profile />} />
