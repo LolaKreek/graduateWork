@@ -13,6 +13,7 @@ export const LoginUser = ({login, password}:LoginUserProps) => {
     
     get(child(dbRef, 'users/' + login)).then((e) =>{
         console.log('response: ', e)
+        console.log("if exist: ", e.exists())
         console.log('e: ', e.val())
     }).catch((e) => {
         console.log("Error: ", e)
