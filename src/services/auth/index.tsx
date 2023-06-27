@@ -16,6 +16,6 @@ export const LoginUser = ({login, password}:LoginUserProps) => {
         console.log("if exist: ", e.exists())
         console.log('e: ', e.val())
     }).catch((e) => {
-        console.log("Error: ", e)
+        // console.log("Error: ", e)
     })
 }
